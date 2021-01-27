@@ -1,17 +1,17 @@
-var userName = '';
 
-window.homepagecheck = function() {
-    var check = false;
-    if(document.location.pathname == "https://naji-albatayneh.github.io/lab03b/index.html"){
-      check=true;
-      }
-      console.log(check)
-    return check;
-  }
-if(window.homepagecheck()){
-    userName = prompt('Please enter your name ', 'Type your name here..');
-    var age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + ' This site contains media showing Profissional Drifers drifting their cars. Please do not try doing what you see here. Enter your age to continue.' , 'Your age..')
+var userName = prompt('Please enter your name ', 'Type your name here..');
+var age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + ' This site contains media showing Profissional Drifers drifting their cars. Please do not try doing what you see here. Enter your age to continue.' , 'Your age..')
+
+
+var current = window.location.pathname;
+
+if (current == 'https://naji-albatayneh.github.io/lab03b/index.html') {
+  console.log('Is the homepage.')
+} else {
+  console.log('Not on the homepage.')
 }
+
+
 
 if(age<18){
     document.getElementById("p1").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18' + '</h2>';
