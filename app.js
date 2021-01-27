@@ -4,11 +4,11 @@ var age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + ' This 
 
 
 var current = window.location.pathname;
-
+console.log(current);
 if (current == 'https://naji-albatayneh.github.io/lab03b/index.html') {
-  console.log('Is the homepage.')
+  console.log('Is the homepage.');
 } else {
-  console.log('Not on the homepage.')
+  console.log('Not on the homepage.');
 }
 
 
