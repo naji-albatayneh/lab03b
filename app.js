@@ -8,7 +8,8 @@ if (current == '/lab03b/index.html') {
     if(age<18){
         document.getElementById("p1").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18' + '</h2>';
         alert('Hey ' + userName + '! We costomized our content to match your age. Have fun!');
-        document.getElementById("p2").textContent= "Access denied for under 18";
+        document.getElementById("p2").innerHTML= '<h3 style="color: red;">' + 'Access denied for under 18' + '</h3>';
+        //document.getElementById("p2").textContent= "Access denied for under 18";
     }else{
         document.getElementById("p1").innerHTML= '<h2 style="color: green;">' + 'Full access view for 18+' + '</h2>';
         alert('Hey ' + userName + '! You have full access to our content. Have fun!');
@@ -20,7 +21,8 @@ if (current == '/lab03b/index.html') {
     if(age<18){
         alert('Hey ' + userName + '! We costomized our content to match your age. Have fun!');
         document.getElementById("p4").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18' + '</h2>';
-        document.getElementById("p3").textContent= "Access denied for under 18";
+        document.getElementById("p3").innerHTML= '<h3 style="color: red;">' + 'Access denied for under 18' + '</h3>';
+        //document.getElementById("p3").textContent= "Access denied for under 18";
     }else{
         alert('Hey ' + userName + '! You have full access to our content. Have fun!');
         document.getElementById("p4").innerHTML= '<h2 style="color: green;">' + 'Full access view for 18+' + '</h2>';
