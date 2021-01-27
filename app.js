@@ -5,6 +5,7 @@ window.homepagecheck = function() {
     if(document.location.pathname === "https://naji-albatayneh.github.io/lab03b/index.html"){
       check=true;
       }
+      console.log(check)
     return check;
   }
 if(window.homepagecheck()){
