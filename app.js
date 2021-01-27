@@ -6,10 +6,10 @@ if (current == '/lab03b/index.html') {
     userName = prompt('Please enter your name ', 'Type your name here..');
     age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + ' This site contains media showing Profissional Drifers drifting their cars. Please do not try doing what you see here. Enter your age to continue.' , 'Your age..');
     if(age<18){
-        document.getElementById("p1").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18' + '</h2>';
+        document.getElementById("p1").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18 - You will not be able to view photos' + '</h2>';
         alert('Hey ' + userName + '! We costomized our content to match your age. Have fun!');
-        document.getElementById("p2").innerHTML= '<h3 style="color: red;">' + 'Access denied for under 18' + '</h3>';
-        //document.getElementById("p2").textContent= "Access denied for under 18";
+        document.getElementById("p2").innerHTML= '<h3 style="color: red;">' + 'Access to photos is denied for under 18' + '</h3>';
+        //document.getElementById("p2").textContent= "Access to photos is denied for under 18";
     }else{
         document.getElementById("p1").innerHTML= '<h2 style="color: green;">' + 'Full access view for 18+' + '</h2>';
         alert('Hey ' + userName + '! You have full access to our content. Have fun!');
@@ -20,9 +20,9 @@ if (current == '/lab03b/index.html') {
     age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + ' This site contains media showing Profissional Drifers drifting their cars. Please do not try doing what you see here. Enter your age to continue.' , 'Your age..')
     if(age<18){
         alert('Hey ' + userName + '! We costomized our content to match your age. Have fun!');
-        document.getElementById("p4").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18' + '</h2>';
-        document.getElementById("p3").innerHTML= '<h3 style="color: red;">' + 'Access denied for under 18' + '</h3>';
-        //document.getElementById("p3").textContent= "Access denied for under 18";
+        document.getElementById("p4").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18 - You will not be able to view photos' + '</h2>';
+        document.getElementById("p3").innerHTML= '<h3 style="color: red;">' + 'Access to photos is denied for under 18' + '</h3>';
+        //document.getElementById("p3").textContent= "Access to photos is denied for under 18";
     }else{
         alert('Hey ' + userName + '! You have full access to our content. Have fun!');
         document.getElementById("p4").innerHTML= '<h2 style="color: green;">' + 'Full access view for 18+' + '</h2>';
