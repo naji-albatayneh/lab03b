@@ -7,7 +7,7 @@ console.log(current);
 if(current == '/lab03b/index.html') {
     for(var i=3;i>0;i--){
         answer = prompt('You have ' + i + ' attempts to confirm that you are NOT A MACHINE. Please enter the result of (3 + 6) ', 'Type your name here..');
-        if(nanswer==9){
+        if(answer==9){
             notMachine=true;
             userName = prompt('Please enter your name ', 'Type your name here..');
             age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + 'This site contains media showing Profissional Drifers drifting their cars. Please do not try doing what you see here. Please enter your age to continue.' , 'Your age..');
