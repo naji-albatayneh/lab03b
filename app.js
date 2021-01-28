@@ -6,8 +6,9 @@ var current = window.location.pathname;
 console.log(current);
 if(current == '/lab03b/index.html') {
     console.log('at homepage');
-    if(notMachine==false){
-        for(var i=3;i>0;i--){
+    var i=3;
+    while(notMachine==false && i!=1){
+        
             answer = prompt('You have ' + i + ' attempts to confirm that you are NOT A MACHINE. Please enter the result of (3 + 6) ', 'Type your answer here..');
             if(answer==9){
                 notMachine=true;
@@ -30,7 +31,8 @@ if(current == '/lab03b/index.html') {
             }else{
                 alert('Your answer is not correct. Please try again');
             }
-        }
+            i--;
+        
 
     }
     
