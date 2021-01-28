@@ -29,11 +29,12 @@ if(current == '/lab03b/index.html') {
                 alert('Your answer is not correct. Please try again');
             }
         }
+        
     }
     
     if(notMachine=false){
-        document.getElementById("m1").innerHTML= '<p style="color: red;">' + 'Access denied. You are cosidered a machine!' + '</p>';
-        document.getElementById("m2").innerHTML= '<h2 style="color: red;">' + 'Access denied. You are cosidered a machine!' + '</h2>';
+        document.getElementById("m1").innerHTML= '<header><p style="color: red;">' + 'Access denied. You are cosidered a machine!' + '</p></header>';
+        document.getElementById("m2").innerHTML= '<main><h2 style="color: red;">' + 'Access denied. You are cosidered a machine!' + '</h2></main>';
     }
 } else if(current == '/lab03b/gallary.html') {
     userName = prompt('Please enter your name ', 'Type your name here..');
