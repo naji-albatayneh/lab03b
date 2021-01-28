@@ -12,7 +12,7 @@ if(current == '/lab03b/index.html') {
                 notMachine=true;
                 userName = prompt('Please enter your name ', 'Type your name here..');
                 age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + 'This site contains media showing Profissional Drifers drifting their cars. Please do not try doing what you see here. Please enter your age to continue.' , 'Your age..');
-                document.getElementById("m1").innerHTML ='<ul><li style="display: inline;"><a href="index.html">Home</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="gallary.html">Photo Gallary</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="contactus.html">Contact Us</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="labmates.html">View Other Sports by Lab03b's Mates</a></li></ul>';
+                document.getElementById("m1").innerHTML ='<ul><li style="display: inline;"><a href="index.html">Home</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="gallary.html">Photo Gallary</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="contactus.html">Contact Us</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="labmates.html">View Other Sports by Lab03b Mates</a></li></ul>';
 
                 if(age<18){
                     document.getElementById("p1").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18 - You will not be able to view photos' + '</h2>';
