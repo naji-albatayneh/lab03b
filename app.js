@@ -12,7 +12,8 @@ if(current == '/lab03b/index.html') {
                 notMachine=true;
                 userName = prompt('Please enter your name ', 'Type your name here..');
                 age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + 'This site contains media showing Profissional Drifers drifting their cars. Please do not try doing what you see here. Please enter your age to continue.' , 'Your age..');
-                
+                document.getElementById("m1").innerHTML ='<ul><li style="display: inline;"><a href="index.html">Home</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="gallary.html">Photo Gallary</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="contactus.html">Contact Us</a></li><li style="display: inline;">|</li><li style="display: inline;"><a href="labmates.html">View Other Sports by Lab03b's Mates</a></li></ul>';
+
                 if(age<18){
                     document.getElementById("p1").innerHTML= '<h2 style="color: red;">' + 'Limited view for under 18 - You will not be able to view photos' + '</h2>';
                     alert('Hey ' + userName + '! We costomized our content to match your age. Have fun!');
@@ -29,13 +30,11 @@ if(current == '/lab03b/index.html') {
                 alert('Your answer is not correct. Please try again');
             }
         }
-        
+
     }
     
-    if(notMachine=false){
-        document.getElementById("m1").innerHTML= '<header><p style="color: red;">' + 'Access denied. You are cosidered a machine!' + '</p></header>';
-        document.getElementById("m2").innerHTML= '<main><h2 style="color: red;">' + 'Access denied. You are cosidered a machine!' + '</h2></main>';
-    }
+    //document.getElementById("m2").innerHTML= '<main><h2 style="color: red;">' + 'Access denied. You are cosidered a machine!' + '</h2></main>';
+
 } else if(current == '/lab03b/gallary.html') {
     userName = prompt('Please enter your name ', 'Type your name here..');
     age = prompt('Welcome to Formula Drift Website, ' + userName + '!' + ' This site contains media showing Profissional Drifers drifting their cars. Please do not try doing what you see here. Please enter your age to continue.' , 'Your age..')
