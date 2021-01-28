@@ -23,7 +23,7 @@ if(current == '/lab03b/index.html') {
                     alert('Hey ' + userName + '! You have full access to our content. Have fun!');
                     document.getElementById("p2").innerHTML= '<img src="https://www.falken.com.au/wp-content/uploads/2019/10/James-Deane-2019-Formula-Drift-Champion-2-Copy.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://bloximages.chicago2.vip.townnews.com/gazettes.com/content/tncms/assets/v3/editorial/3/c4/3c4f3ff8-54d4-11e9-9fa0-c34c4ef96b86/58e2c1e32b8f7.image.jpg?resize=881%2C502" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://store-images.s-microsoft.com/image/apps.23298.14355368446062212.8bbd23ed-e9ab-4691-b02a-78fef05d4c17.a6d2007c-e955-4f7a-a2c8-b72fc76f1440?w=1399&h=874&q=90&format=jpg" width="400px"; height="300px";/>';
                 }
-            }else if(i==0){
+            }else if(i==1){
                 alert('Your answer is not correct. You are considered a machine!');
             }else{
                 alert('Your answer is not correct. Please try again');
