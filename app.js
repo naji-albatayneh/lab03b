@@ -7,7 +7,7 @@ console.log(current);
 if(current == '/lab03b/index.html') {
     console.log('at homepage');
     var i=3;
-    while(notMachine==false && i>0){
+    while(notMachine==false && i!=1){
         
             answer = prompt('You have ' + i + ' attempts to confirm that you are NOT A MACHINE. Please enter the result of (3 + 6) ', 'Type your answer here..');
             if(answer==9){
