@@ -62,8 +62,8 @@ if(current == '/lab03b/index.html') {
         while(!(repeatImage>=1 && repeatImage <=6)){
             repeatImage = prompt('Hey ' + userName + '! You have full access to our content. Have fun!' + 'Enter your lucky number between 1 and 6 to continue.' , 'Your lucky number..');
         }
-        while(repeatImage>=1 && repeatImage <=6){
-            document.getElementById("p3").innerHTML= document.getElementById("p3").innerHTML + repeatImage + '<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC2_1779.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;';
+        for(var j=1; repeatImage>=1 && repeatImage <=6;j++){
+            document.getElementById("p3").innerHTML= document.getElementById("p3").innerHTML + j + '<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC2_1779.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;';
             repeatImage--;
         }
         //alert('Hey ' + userName + '! You have full access to our content. Have fun!');
