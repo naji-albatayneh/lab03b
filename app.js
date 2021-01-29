@@ -2,6 +2,7 @@ var userName;
 var age;
 var notMachine=false;
 var answer;
+var repeatImage;
 var current = window.location.pathname;
 console.log(current);
 
@@ -57,9 +58,17 @@ if(current == '/lab03b/index.html') {
         document.getElementById("p3").innerHTML= '<h3 style="color: red;">' + 'Access to photos is denied for under 18' + '</h3>';
         //document.getElementById("p3").textContent= "Access to photos is denied for under 18";
     }else{
-        alert('Hey ' + userName + '! You have full access to our content. Have fun!');
+        repeatImage = prompt('Hey ' + userName + '! You have full access to our content. Have fun!' + 'Enter your lucky number between 1 and 6 to continue.' , 'Your lucky number..');
+        while(!(repeatImage>=1 && repeatImage <=6)){
+            repeatImage = prompt('Hey ' + userName + '! You have full access to our content. Have fun!' + 'Enter your lucky number between 1 and 6 to continue.' , 'Your lucky number..');
+        }
+        while(repeatImage>=1 && repeatImage <=6){
+            document.getElementById("p3").innerHTML= document.getElementById("p3").innerHTML + repeatImage + '<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC2_1779.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;';
+            repeatImage--;
+        }
+        //alert('Hey ' + userName + '! You have full access to our content. Have fun!');
         document.getElementById("p4").innerHTML= '<h2 style="color: green;">' + 'Full access view for 18+' + '</h2>';
-        document.getElementById("p3").innerHTML= '<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC2_1779.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC2_1630.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LB2_7976.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LY1_9784.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC3_0947.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LB2_8334.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.falken.com.au/wp-content/uploads/2019/10/James-Deane-2019-Formula-Drift-Champion-2-Copy.jpg" width="400px"; height="300px"; &nbspi &nbspi &nbspi &nbspi/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://bloximages.chicago2.vip.townnews.com/gazettes.com/content/tncms/assets/v3/editorial/3/c4/3c4f3ff8-54d4-11e9-9fa0-c34c4ef96b86/58e2c1e32b8f7.image.jpg?resize=881%2C502" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://store-images.s-microsoft.com/image/apps.23298.14355368446062212.8bbd23ed-e9ab-4691-b02a-78fef05d4c17.a6d2007c-e955-4f7a-a2c8-b72fc76f1440?w=1399&h=874&q=90&format=jpg" width="400px"; height="300px";/>';
+        //document.getElementById("p3").innerHTML= '<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC2_1779.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC2_1630.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LB2_7976.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LY1_9784.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LC3_0947.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://news.formulad.com/wordpress/wp-content/uploads/2020/09/LB2_8334.jpg" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.falken.com.au/wp-content/uploads/2019/10/James-Deane-2019-Formula-Drift-Champion-2-Copy.jpg" width="400px"; height="300px"; &nbspi &nbspi &nbspi &nbspi/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://bloximages.chicago2.vip.townnews.com/gazettes.com/content/tncms/assets/v3/editorial/3/c4/3c4f3ff8-54d4-11e9-9fa0-c34c4ef96b86/58e2c1e32b8f7.image.jpg?resize=881%2C502" width="400px"; height="300px";/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://store-images.s-microsoft.com/image/apps.23298.14355368446062212.8bbd23ed-e9ab-4691-b02a-78fef05d4c17.a6d2007c-e955-4f7a-a2c8-b72fc76f1440?w=1399&h=874&q=90&format=jpg" width="400px"; height="300px";/>';
     }
   
 }
