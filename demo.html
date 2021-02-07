@@ -32,13 +32,11 @@
         if(!(userAge>=22 && userAge <=35)){
             alert('Sorry ' + userName + '! ' + 'Your age is ' + userAge +'. You are unqualified for this position since your age is not within the required range (22-35). We wish you Good Luck!' );
         }else{
-            var postionSkills = prompt('Congratulations ' + userName + ', you are one step closer from securing this position! Can you code in Javascript? [yes] or [no]?');
-            console.log('Have kills in Javascript: ' + postionSkills);
-            while(postionSkills !== 'yes' || postionSkills !== 'no'){
-                var postionSkills = prompt('Your answer is not valid! Can you code in Javascript? [yes] or [no]?');
-                console.log('Have kills in Javascript: ' + postionSkills);
-            }
-            if(postionSkills=='yes'){
+            var positionSkills = prompt('Congratulations ' + userName + ', you are one step closer from securing this position! Can you code in Javascript? [yes] or [no]?');
+            console.log('Have kills in Javascript: ' + positionSkills);
+
+            
+            if(positionSkills=='yes'){
                 var answer = prompt('WOW ' + userName + '! You are only one step away from securing this position. Please answer this question: Can we re-assign a new value to a variable decleared as Const? [yes] or [no]?');
                 console.log('Can we re-assign a new value to a variable decleared as Const: ' + answer);
                 if (answer == 'no'){
