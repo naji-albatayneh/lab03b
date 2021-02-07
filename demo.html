@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 01b: Getting Up and Running!</title>
+    <style>
+        header h1 {
+            color: goldenrod;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Class 1 Lab</h1>
+    </header>
+    <main>
+        <p style="color: blue; background-color: cornflowerblue;">What is your Name?</p>
+        <p style="color: brown; background-color: burlywood;">What is your Age?</p>
+        <p style="color: blueviolet; background-color: lightgreen;">Can you code in Javescript?</p>
+        <p style="color: lime; background-color: wheat;">Can we re-assign a new value to a variable decleared as Const?</p>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        'use strict';
+        let userName = prompt('Welcome to EmploymentHub! Please enter your Name', 'Name');
+        console.log('User Name:' + userName);
+        let userAge = prompt('Hello ' + userName + '! ' + 'Please enter your Age', 'Age');
+        console.log('User Age: ' + userAge);
+        userAge = parseInt('userAge');
+        if(!(userAge>=22 && userAge <=35)){
+            alert('Sorry ' + userName + '! ' + 'Your age is ' + userAge +'. You are unqualified for this position since your age is not within the required range (22-35). We wish you Good Luck!' );
+        }else{
+            var postionSkills = prompt('Congratulations ' + userName + ', you are one step closer from securing this position! Can you code in HTML? [yes] or [no]?');
+            console.log('Have kills in Javascript: ' + postionSkills);
+            while(postionSkills != 'yes' || postionSkills != 'no'){
+                var postionSkills = prompt('Your answer is not valid! Can you code in Javascript? [yes] or [no]?');
+                console.log('Have kills in Javascript: ' + postionSkills);
+            }
+            if(postionSkills=='yes'){
+                var answer = prompt('WOW ' + userName + '! You are only one step away from securing this position. Please answer this question: Can we re-assign a new value to a variable decleared as Const? [yes] or [no]?');
+                console.log('Can we re-assign a new value to a variable decleared as Const: ' + answer);
+                if (answer == 'no'){
+                    alert('Congratulations ' + userName + '! You are a skilled Javascript Developer. You are Hired!');
+                }else if(answer=='yes'){
+                    alert('Sorry ' + userName + '! You are not a skilled Javascript Developer. You need to enroll in ASAC-LTUC to improve your Javascript skills. Good Luck!');
+                }
+            }else if(postionSkills=='no'){
+                alert('Sorry ' + userName + '! You are not qualified for this position. You need to enroll in ASAC-LTUC to improve your Javascript skills. Good Luck!');
+            }
+        }
+
+    </script>
+</body>
+</html>
